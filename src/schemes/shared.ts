@@ -85,5 +85,5 @@ export const invoiceEscrowPaymentSchema = z.object({
 });
 
 export const invoiceProjectSchema = z.object({
-  merchant_url: z.string().optional().describe('Merchant URL'),
+  url: z.string().optional().describe('Project URL'),
 });
