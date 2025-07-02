@@ -1,5 +1,9 @@
 This changelog references the relevant changes (bug and security fixes).
 
+**1.0.11** - _02.05.2025_
+
+- Updated Details schema.
+
 **1.0.10** - _24.04.2025_
 
 - Added the ability to interact with a s2s API endpoint.
