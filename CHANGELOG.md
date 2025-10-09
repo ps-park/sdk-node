@@ -1,5 +1,9 @@
 This changelog references the relevant changes (bug and security fixes).
 
+**1.0.12** - 
+
+- Added new field to Customer schema. 
+
 **1.0.11** - _02.05.2025_
 
 - Updated Details schema.
