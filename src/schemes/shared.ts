@@ -91,3 +91,7 @@ export const invoiceEscrowPaymentSchema = z.object({
 export const invoiceProjectSchema = z.object({
   url: z.string().optional().describe('Project URL'),
 });
+
+export const invoicePaywaySchema = z.object({
+  pwid: z.string().optional().describe('Payway ID'),
+});
