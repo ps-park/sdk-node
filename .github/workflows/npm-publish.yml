@@ -7,7 +7,7 @@ on:
 
 permissions:
   contents: read
-  id-token: write # ключове — дозвіл на генерацію OIDC-токена
+  id-token: write # critical — allows generating the OIDC token
 
 jobs:
   publish:
@@ -19,10 +19,10 @@ jobs:
         with:
           node-version: 24
 
-      # trusted publishing вимагає npm >= 11.5.1
+      # trusted publishing requires npm >= 11.5.1
       - run: npm install -g npm@latest
 
-      # захист від розсинхрону: тег v1.2.3 == version у package.json
+      # guard against version drift: tag v1.2.3 must match version in package.json
       - name: Verify tag matches package.json
         run: |
           TAG_VERSION=${GITHUB_REF_NAME#v}
